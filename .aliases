@@ -1,0 +1,40 @@
+#alias cpy='pbcopy < ~/.ssh/id_rsa.pub'
+alias cpy='clip < ~/.ssh/id_rsa.pub'
+
+#git
+alias g='git'
+alias gb='git branch'
+alias gc='git commit -am'
+alias gca='git commit -a --amend --no-edit'
+alias gp='git push -u origin'
+alias gs='git switch'
+
+gi() {
+git rebase -i HEAD~"$1"
+}
+alias gf='git fetch -p'
+alias gpl='git pull --ff-only'
+alias gl='git log --graph --decorate --oneline'
+#alias gplr='echo "git checkout --track origin/"'
+
+gch() {
+git checkout -b hotfix/"$1"
+}
+
+gplr() {
+git checkout --track origin/"$1"
+}
+
+
+
+#anuglar
+
+alias ngs="ng serve";
+alias ngsh="ng serve --hmr";
+alias start="npm start";
+alias nps="npm start";
+alias build="npm run build";
+alias deploy="npm run deploy";
+alias ngsp="ng serve --port";
+alias ngd="ng serve -c dev";
+alias ngdm="ng serve -c demo";
