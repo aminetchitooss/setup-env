@@ -1,0 +1,13 @@
+{
+    "app": {
+        "name": "My App Name",
+        "privacyPolicyURL": "https://www.aldautomotive.com/data-privacy-policy",
+        "vendors": {
+            "iab": {
+                "all": true
+            }
+        },
+        "gdprAppliesGlobally": true,
+        "gdprAppliesWhenUnknown": true
+    }
+}
